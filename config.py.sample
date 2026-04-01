@@ -1,0 +1,7 @@
+kafka_config = {
+    "bootstrap_servers": ['IP:9092'],
+    "username": 'USER',
+    "password": 'PWD',
+    "security_protocol": 'SASL_PLAINTEXT',
+    "sasl_mechanism": 'PLAIN'
+}
