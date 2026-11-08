@@ -30,22 +30,22 @@ Copy file config.py.sample and populate config of kafka
 Run once for topic creating
 
 ```
-venv/bin/python topic_init.py
+.venv/bin/python topic_init.py
 ```
 
 # Run simualtion
 
 ```bash
 # simulate sensors
-venv/bin/python sensor_simulator.py -n "sensor01" -t "roman_s_building_sensors" -q 50
-venv/bin/python sensor_simulator.py -n "sensor02" -t "roman_s_building_sensors" -q 50
-venv/bin/python sensor_simulator.py -n "sensor03" -t "roman_s_building_sensors" -q 50
+.venv/bin/python sensor_simulator.py -n "sensor01" -t "roman_s_building_sensors" -q 50
+.venv/bin/python sensor_simulator.py -n "sensor02" -t "roman_s_building_sensors" -q 50
+.venv/bin/python sensor_simulator.py -n "sensor03" -t "roman_s_building_sensors" -q 50
 
 # process sensors events and create alerts
-venv/bin/python event_processor.py
+.venv/bin/python event_processor.py
 
 # print alerts
-venv/bin/python alert_reader.py
+.venv/bin/python alert_reader.py
 
 ```
 
